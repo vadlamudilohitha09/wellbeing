@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prediction Result</title>
+    <title>Result</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+        .box {
+            margin-top: 120px;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Prediction Result</h1>
+<div class="box">
 
-<h2>Predicted Human Development Index (HDI):</h2>
+    <h1>Predicted HDI</h1>
 
-<h3>{{ prediction }}</h3>
+    <h2>{{ prediction }}</h2>
 
-<br>
+    <p>Country: {{ country }}</p>
 
-<a href="/">Predict Again</a>
+    <a href="/">Predict Again</a>
+
+</div>
 
 </body>
 </html>
